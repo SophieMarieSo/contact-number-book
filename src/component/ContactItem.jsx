@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 
 export default function ContactItem() {
     return (
-        <Row>
+        <Row style={{ marginTop: 8 }}>
             <Col lg={1}>
                 <img
                     width={50}

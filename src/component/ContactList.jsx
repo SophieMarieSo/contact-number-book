@@ -4,7 +4,7 @@ import ContactItem from './ContactItem';
 
 export default function ContactList() {
     return (
-        <div>
+        <div style={{ marginTop: 32 }}>
             <SearchBox />
             <ContactItem />
         </div>
