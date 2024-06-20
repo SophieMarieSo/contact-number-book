@@ -1,7 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-export default function ContactItem() {
+export default function ContactItem({ contact }) {
+    const { name, phoneNumber } = contact;
     return (
         <Row style={{ marginTop: 8 }}>
             <Col lg={1}>
@@ -12,8 +13,8 @@ export default function ContactItem() {
                 />
             </Col>
             <Col lg={11}>
-                <div>안은진</div>
-                <div>01012345678</div>
+                <div>{name}</div>
+                <div>{phoneNumber}</div>
             </Col>
         </Row>
     );

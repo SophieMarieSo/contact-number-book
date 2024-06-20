@@ -9,7 +9,7 @@ export default function ContactList() {
         <div style={{ marginTop: 32 }}>
             <SearchBox />
             {contactList.map((contact) => (
-                <ContactItem />
+                <ContactItem contact={contact} />
             ))}
         </div>
     );

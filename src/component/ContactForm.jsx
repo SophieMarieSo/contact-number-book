@@ -16,6 +16,7 @@ export default function ContactForm() {
                         phoneNumber: contact.phoneNumber,
                     },
                 });
+                setContact({ name: '', phoneNumber: '' });
             }}
         >
             <Form.Group className='mb-3' controlId='formName'>
@@ -23,6 +24,7 @@ export default function ContactForm() {
                 <Form.Control
                     type='text'
                     placeholder='이름을 입력해주세요'
+                    value={contact.name}
                     onChange={(e) => {
                         setContact({ ...contact, name: e.target.value });
                         console.log(contact);
@@ -34,6 +36,7 @@ export default function ContactForm() {
                 <Form.Control
                     type='number'
                     placeholder='전화번호를 입력해주세요'
+                    value={contact.phoneNumber}
                     onChange={(e) => {
                         setContact({ ...contact, phoneNumber: e.target.value });
                         console.log(contact);
